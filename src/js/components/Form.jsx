@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import uuidv1 from "uuid";
 import { addArticle } from "../actions/index";
+import { DATA_LOADED } from "../constants/action-types";
 function mapDispatchToProps(dispatch) {
   return {
     addArticle: article => dispatch(addArticle(article))
